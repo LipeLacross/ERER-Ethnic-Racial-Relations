@@ -26,8 +26,7 @@ layout: center
 <span class="sub">Brasil: Identidades em Construção • 2026</span>
 </div>
 <div class="topbar-right">
-<span class="pill">● PAINEL 16:9</span>
-<span class="pill ghost">Grupo até 5 • Entrega digital + apresentação</span>
+<span class="pill ghost">UFRPE • 2026</span>
 </div>
 </header>
 
@@ -168,9 +167,7 @@ Arte marcial disfarçada de dança • resistência em movimento
 
 <footer class="foot">
 <div class="foot-left">
-<span><b>Entrega:</b> painel digital 16:9 • todos os 8 itens obrigatórios acima</span>
-<span class="dot">•</span>
-<span><b>Apresentação:</b> socialização breve na próxima aula presencial</span>
+<span>UFRPE • ERER • Brasil: Identidades em Construção • 2026</span>
 </div>
 <div class="foot-right">
 <span class="foot-badge">Tema 3 • Escravização, Resistência e Liberdade</span>
