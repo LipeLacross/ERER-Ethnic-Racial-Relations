@@ -4,35 +4,31 @@ Painel único 16:9 espetacular em **Slidev** (Markdown + Vue) — pronto para ap
 
 ## O que já está pronto (nessa pasta)
 - `slides.md` → painel único com **os 8 itens obrigatórios** (título, pergunta, resposta norteadora, 3 fatos, exemplo capoeira, 2 conceitos Raça/Cultura, conexão atual, pergunta provocadora, 6 referências)
-- `style.css` → overrides globais
+- `style.css` → tema custom (paleta ocre/dourado, grid hero + bento 3 colunas)
 - `painel-erer-tema3.pdf` → **PDF exportado** (1 slide 16:9, pronto para enviar/imprimir)
-- `painel-erer-tema3.png` → imagem do painel
-- `dist/` → site estático buildado (`index.html`)
+- `painel-erer-tema3.pptx` → **PPTX exportado** (imagem por slide, para apresentação)
+- `public/images/` → imagens locais (vazio, usa Unsplash CDN atualmente)
 
 ## Rodar local (preview ao vivo com hot-reload)
 
-> **Atenção Windows + acentos**: o caminho `H:\My Drive\11º Período\…` quebra symlinks do npm. Use a cópia sem acentos em `C:\temp-painel-erer` (já criada) para `npm run dev`/`export`.
-
 ```bash
-# opção 1 — usar a cópia sem acentos (recomendado)
-cd C:\temp-painel-erer
-npm install        # já feito
+cd apt-1
+npm install        # já feito, vite 5.4.21 pinado
 npm run dev        # abre http://localhost:3030
-
-# opção 2 — se mover a pasta para um caminho sem acentos
-npm run dev
 ```
+
+> Nota Windows + acentos: se `npm run dev` falhar por caminho com acentos, copie `apt-1/` para `C:\temp\apt-1` e rode lá.
 
 ## Build e export
 
 ```bash
-cd C:\temp-painel-erer
-npm run build              # gera dist/
-npm run export             # slidev export --format pdf  → painel-erer-tema3.pdf
-npm run export:pptx        # slidev export --format pptx → imagens (texto não editável)
+cd apt-1
+npm run build              # gera dist/ (ignorado no git, para GitHub Pages)
+npm run export             # npx slidev export --format pdf  → painel-erer-tema3.pdf
+npm run export:pptx        # npx slidev export --format pptx → painel-erer-tema3.pptx (imagem)
 ```
 
-Pré-requisito PPTX/PDF: `npm install -D playwright-chromium` (já instalado em C:\temp-painel-erer).
+Pré-requisito: `playwright-chromium` e `vite@5.4.21` já instalados (fix `ERR_MODULE_NOT_FOUND`).
 
 ## Trocar imagens
 
