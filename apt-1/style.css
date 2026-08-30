@@ -1,0 +1,17 @@
+/* Global overrides para painel único — esconde UI do Slidev e garante 16:9 limpo */
+:root {
+  --slidev-theme-primary: #D4A017;
+}
+html, body { background: #1a1207; }
+.slidev-layout{
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+#slideshow{ background: #1a1207; }
+#page-root, .slidev-page, .slide-container{
+  overflow: visible !important;
+}
+/* esconde barra de progresso e controles na exportação */
+.slidev-progress, .slidev-controls{ display:none !important; }
